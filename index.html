@@ -24,22 +24,24 @@
               <label for="new-last-name">Last name</label>
               <input type="text" class="form-control" id="new-last-name">
             </div>
-            <div class="form-group">
-              <label for="new-street">Street</label>
-              <input type="text" class="form-control" id="new-street">
-            </div>
-            <div class="form-group">
-              <label for="new-city">City</label>
-              <input type="text" class="form-control" id="new-city">
-            </div>
-            <div class="form-group">
-              <label for="new-state">State Abbreviation</label>
-              <input type="text" class="form-control" id="new-state">
-            </div>
-            <div class="form-group">
-              <label for="new-zip">Zip Code</label>
-              <input type="number" class="form-control" id="new-zip">
-            </div>
+            <div id="new-addresses">
+                <div class="new-address">
+                  <div class="form-group">
+                    <label for="new-street">Street</label>
+                    <input type="text" class="form-control new-street">
+                  </div>
+                  <div class="form-group">
+                    <label for="new-city">City</label>
+                    <input type="text" class="form-control new-city">
+                  </div>
+                  <div class="form-group">
+                    <label for="new-state">State</label>
+                    <input type="text" class="form-control new-state">
+                  </div>
+                </div>
+              </div>
+
+              <span class="btn btn-primary" id="add-address">Another address</span>
             <button type="submit" class="btn">Add</button>
           </form>
 
@@ -53,9 +55,8 @@
             <h2></h2>
             <p>First name: <span class="first-name"></span></p>
             <p>Last name: <span class="last-name"></span></p>
-            <p>Street: <span class="street"></span></p>
-            <p>City, State: <span class="cityState"></span></p>
-            <p>Zip: <span class="zip"></span></p>
+            <ul id="addresses">
+            </ul>
           </div>
         </div>
       </div>
